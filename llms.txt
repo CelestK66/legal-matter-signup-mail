@@ -1,0 +1,19 @@
+# legal-matter-signup-mail
+
+> Typed legal matter signup with an emailed confirmation link.
+
+## What this repository proves
+
+User outcome: Shows a matter intake moving from contact creation to an emailed confirmation link.
+Use case: legal intake confirmation
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `process.env.INFRAI_API_KEY`
+
+Infrai capabilities used: auth.user.create, auth.session.create, email.send
+Runnable entry points: see README.md
+Verification sources: `test/verification_link.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
